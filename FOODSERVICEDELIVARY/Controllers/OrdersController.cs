@@ -60,7 +60,7 @@ namespace FOODSERVICEDELIVARY.Controllers
                         .Include(c => c.Orders)
                         .ThenInclude(o => o.Restaurant)
                         .Include(c => c.Tips)
-                        .FirstOrDefault(c => c.Id == customerId);
+                        .FirstOrDefault(c => c.Id == customerId); 
 
                 if (customer == null)
                 {
